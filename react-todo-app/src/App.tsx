@@ -1,18 +1,15 @@
-const App = () => {
-  const name = {
-    firstName: 'Netanel',
-    lastName: 'Cohen',
-    height: '1.90',
-    weight: '97',
-  };
+const LoggedIn = true;
 
+const App = () => {
   return (
-    <>
-      <div>
-        <div className='text-5xl'>App</div>
-        <p>Hello {name.firstName}</p>
-      </div>
-    </>
+    <div>
+      <>
+        <div>
+          <header className='text-2xl'>Hellp Netanel</header>
+          {LoggedIn ? <h1>You're Logged In !</h1> : <h1>Please Log in.</h1>}
+        </div>
+      </>
+    </div>
   );
 };
 
